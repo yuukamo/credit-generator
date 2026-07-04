@@ -42,6 +42,9 @@ body {
 }
 main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
 h1 { font-size: 24px; margin: 8px 0 4px; }
+.site-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 6px; }
+.site-brand img { height: 56px; width: auto; }
+.site-brand h1 { margin: 0; }
 h2 { font-size: 18px; margin: 40px 0 12px; border-left: 4px solid var(--accent); padding-left: 10px; }
 .lead { color: var(--text-sub); margin: 0 0 24px; }
 
