@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>クレジット文ジェネレーター｜BGM・効果音・イラスト素材の表記を自動生成【無料】</title>
+<meta name="description" content="魔王魂・OtoLogic・DOVA-SYNDROMEなど主要フリー素材サイトのクレジット表記（概要欄用）を、素材名を入れるだけで自動生成。登録不要・無料。表記の要否も一目でわかります。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>クレジット文ジェネレーター</h1>
+  <p class="lead">動画で使ったBGM・効果音・イラスト素材の<strong>クレジット表記（概要欄用）</strong>を自動生成します。登録不要・無料。</p>
+
+  <div class="card">
+    <div id="rows"></div>
+    <div class="actions">
+      <button id="add-row" class="ghost" type="button">＋ 素材を追加</button>
+      <button id="generate" class="primary" type="button">クレジット文を生成</button>
+    </div>
+
+    <div id="result" hidden>
+      <textarea id="output" readonly aria-label="生成されたクレジット文"></textarea>
+      <div class="actions">
+        <button id="copy" class="primary" type="button">コピーする</button>
+        <span id="copy-msg" role="status"></span>
+      </div>
+      <div id="checklist" class="checklist" hidden></div>
+    </div>
+  </div>
+
+  <h2>対応サイトと表記の要否</h2>
+  <table>
+    <thead>
+      <tr><th>素材サイト</th><th>クレジット表記</th><th>補足</th><th>公式規約</th></tr>
+    </thead>
+    <tbody id="site-table-body"></tbody>
+  </table>
+
+  <h2>よくある質問</h2>
+  <details>
+    <summary>クレジット表記とは何ですか？</summary>
+    <p>使用した素材の作者や入手元を明示する記載のことです（例：「音楽：魔王魂」）。フリー素材サイトの多くは無料利用の条件としてこの表記を求めており、書き方や記載場所（動画内・概要欄など）はサイトごとにルールが異なります。</p>
+  </details>
+  <details>
+    <summary>書かないとどうなりますか？</summary>
+    <p>表記が必須のサイトの素材で表記を怠ると規約違反になります。動画の削除依頼・収益化の停止・最悪の場合は法的トラブルにつながる可能性があります。一方で「表記不要」のサイトもあるため、まずどのサイトの素材かを把握することが大切です。</p>
+  </details>
+  <details>
+    <summary>どこに書けばいいですか？</summary>
+    <p>YouTubeの場合、概要欄または動画内（エンドロールなど）が一般的です。多くのサイトは場所を指定していませんが、サイトによっては指定がある場合もあるため、規約の指示に従ってください。</p>
+  </details>
+  <details>
+    <summary>表記不要のサイトでも書いていいですか？</summary>
+    <p>問題ありません。むしろ作者に感謝を示す行為として歓迎されることが多く、視聴者が同じ素材を探す手がかりにもなります。</p>
+  </details>
+
+  <h2>免責事項</h2>
+  <p class="disclaimer">
+    本ツールの表記ルールは 2026年7月4日 時点で各サイトの公式規約を確認して作成していますが、規約は変更されることがあります。
+    素材の利用・公開前には、必ず各サイトの最新の公式規約をご確認ください。
+    本ツールの利用により生じたいかなる損害についても、作者は責任を負いかねます。
+  </p>
+
+  <footer>
+    <p>クレジット文ジェネレーター（無料版）｜素材を保存して毎回の入力を不要にするデスクトップ版を開発中です。</p>
+  </footer>
+</main>
+<script src="rules.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
