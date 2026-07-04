@@ -1,0 +1,36 @@
+/* 記事ページ共通スタイル */
+article h2 { margin-top: 40px; }
+article h3 { font-size: 16px; margin: 24px 0 6px; }
+.meta-date { color: var(--text-sub); font-size: 13px; }
+.answer-box {
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin: 20px 0;
+  background: var(--surface);
+}
+.copy-example {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-family: Consolas, "MS Gothic", monospace;
+  font-size: 13px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+.cta {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 28px 0;
+}
+.cta a { color: var(--accent); font-weight: bold; }
+.warn-box {
+  background: var(--warn-bg);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 16px 0;
+}

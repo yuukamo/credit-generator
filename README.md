@@ -14,7 +14,7 @@
 - `rules.js` — 素材サイトごとの表記ルールデータ（★ここを編集してサイト追加）
 - `app.js` — 生成・コピー・テーブル描画のロジック
 - `style.css` — スタイル（ライト/ダーク自動対応）
-- `articles/` — SEO記事（credit-rules.html＝表記ルール一覧記事）
+- `articles/` — SEO記事（credit-rules.html＝一覧記事＋サイト別個別記事7本、article.css＝記事共通スタイル）
 - `sitemap.xml` — サイトマップ（記事追加時はここにもURLを足す）
 
 ## サイトの追加方法
