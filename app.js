@@ -9,6 +9,7 @@
   const copyMsgEl = document.getElementById("copy-msg");
 
   const siteById = (id) => SITE_RULES.find((s) => s.id === id);
+  const track = (name, params) => { if (typeof gtag === "function") gtag("event", name, params || {}); };
 
   // ---- 入力行 ----
   function addRow() {
@@ -125,6 +126,7 @@
     resultEl.hidden = false;
     copyMsgEl.textContent = "";
     resultEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    track("generate_credit", { asset_count: entries.length, site_count: groups.size });
   }
 
   // ---- コピー ----
@@ -140,6 +142,7 @@
       copyMsgEl.textContent = "コピーしました ✓";
     }
     setTimeout(() => (copyMsgEl.textContent = ""), 3000);
+    track("copy_credit");
   }
 
   // ---- 対応サイト一覧テーブル ----
